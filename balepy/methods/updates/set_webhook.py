@@ -1,3 +1,5 @@
+from typing import Optional
+
 from balepy.objects import HTTPMethod
 
 import balepy
@@ -5,15 +7,15 @@ import balepy
 
 class SetWebhook:
 
-    '''
-    this method for get updates on webhook
-    '''
-
     async def set_webhook(
             self: "balepy.Client",
-            url: str
-    ):
+            url: str,
+            max_connections: Optional[int] = None,
+            allowed_updates: Optional[list[str]] = None
+    ) -> dict:
         params = {
-            'url': url
+            'url': url,
+            'max_connections': max_connections,
+            'allowed_updates': allowed_updates
         }
         return await self.api.execute(name="setWebhook", method=HTTPMethod.POST, data=params)

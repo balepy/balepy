@@ -1,3 +1,5 @@
+from typing import Union
+
 from balepy.objects import HTTPMethod
 
 import balepy
@@ -7,10 +9,10 @@ class ForwardMessage:
 
     async def forward_message(
             self: "balepy.Client",
-            chat_id: str,
-            from_chat_id: str,
+            chat_id: Union[int, str],
+            from_chat_id: Union[int, str],
             message_id: int
-    ):
+    ) -> dict:
         params = {
             'chat_id': chat_id,
             'from_chat_id': from_chat_id,

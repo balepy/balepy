@@ -1,3 +1,5 @@
+from typing import Union
+
 from balepy.objects import HTTPMethod
 
 import balepy
@@ -7,9 +9,9 @@ class DeleteMessage:
 
     async def delete_message(
             self: "balepy.Client",
-            chat_id: str,
-            message_id: str
-    ):
+            chat_id: Union[int, str],
+            message_id: int
+    ) -> dict:
         params = {
             'chat_id': chat_id,
             'message_id': message_id

@@ -1,10 +1,9 @@
 
 class APIError(Exception):
-    """
-    Signal error with an API access.
-    """
     error_code: int
     description: str
 
-    def __post_init__(self):
+    def __init__(self, description: str, error_code: int):
+        self.error_code = error_code
+        self.description = description
         super().__init__(f"Error {self.error_code}: {self.description}")

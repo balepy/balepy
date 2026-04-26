@@ -1,3 +1,5 @@
+from typing import Optional, Union
+
 from balepy.objects import HTTPMethod
 
 import balepy
@@ -7,10 +9,10 @@ class SendMediaGroup:
 
     async def send_media_group(
             self: "balepy.Client",
-            chat_id: str,
-            media,
-            reply_to_message_id=None
-    ):
+            chat_id: Union[int, str],
+            media: list[dict],
+            reply_to_message_id: Optional[int] = None
+    ) -> dict:
         params = {
             'chat_id': chat_id,
             'media': media,
