@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://balepy.github.io/statics/logo.png" width="200" alt="BalePy Logo">
+  <img src="./assets/logo.png" width="200" alt="BalePy Logo" style="border-radius: 50px;">
 </p>
 
 <h1 align="center">balepy</h1>
