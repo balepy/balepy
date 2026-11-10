@@ -9,8 +9,8 @@
 </h3>
 
 <p align="center">
-  <a href="https://balepy.xyz">Documentation</a> |
-  <a href="https://ble.ir/balepy_gap">Community</a> |
+  <a href="https://balepy.github.io/">Documentation</a> |
+  <a href="https://t.me/balepy_group">Community</a> |
   <a href="https://ble.ir/balepy">Channel</a>
 </p>
 
@@ -99,5 +99,5 @@ Every contribution is appreciated!
 
 ## License
 
-Balepy is released under the [MIT License](https://github.com/Erfan-Bafandeh/balepy/blob/main/LICENSE).
+Balepy is released under the [MIT License](https://github.com/balepy/balepy/blob/main/LICENSE).
 
