@@ -6,7 +6,7 @@ setup(
     author='Mohammad, AmirAli, Erfan',
     author_email='mohammadmehrabi175@gmail.com',
     description='balepy - The most complete Python library for Bale messenger bot API',
-    keywords=['bot', 'Bot', 'bale', 'robot', 'messangers', 'bale-bot', 'balepy'],
+    keywords=['bot', 'Bot', 'bale', 'robot', 'messangers', 'bale-bot', 'balepy', 'splus', 'soroush', 'telegram'],
     long_description=open("README.md", encoding="utf-8").read(),
     python_requires="~=3.6",
     long_description_content_type='text/markdown',
